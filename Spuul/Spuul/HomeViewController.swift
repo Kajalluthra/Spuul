@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var homeTableView: UITableView!
-    let apiInstance = APIManager()
+    let manager = MoviesManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,14 +25,8 @@ class HomeViewController: UIViewController {
         let movieListNib = UINib(nibName: "HomeTableViewCell", bundle: nil)
         homeTableView.register(movieListNib, forCellReuseIdentifier: "homeCell")
         
-        self.apiInstance.homeTitleApi { (success, response, error) in
-            if success {
-                
-                
-            } else {
-           
-            }
-        }
+        self.manager.delegate = self
+        self.manager.loadContentForMoviesList()
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,13 +44,29 @@ extension HomeViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.manager.movieListArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: HomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: "homeCell") as! HomeTableViewCell
-
+        cell.setupHomeCell(movieList: self.manager.movieListArray[indexPath.row])
         return cell
     }
 }
+
+//MARK:- MoviesManagerDelegate Protocol Method
+extension HomeViewController : MoviesManagerDelegate {
+    
+    @objc internal func didUpdateList() {
+        DispatchQueue.main.async {
+            self.homeTableView.reloadData()
+        }
+    }
+    
+    @objc internal func didUpdateErrorWithAlert( error: String){
+       
+        //show alert
+    }
+}
+

@@ -20,7 +20,11 @@ class HomeTableViewCell: UITableViewCell {
 
     }
     
-
+    func setupHomeCell(movieList : MovieList ) {
+        self.movieTypeLabel.text = movieList.name
+        
+        
+    }
 }
 
 
