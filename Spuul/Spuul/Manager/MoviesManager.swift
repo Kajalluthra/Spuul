@@ -64,9 +64,7 @@ class MoviesManager: NSObject {
             }
         }
         
-    }
-    
+    }//end
     
     
 }
-

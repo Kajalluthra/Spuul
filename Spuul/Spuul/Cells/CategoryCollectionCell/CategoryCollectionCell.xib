@@ -35,7 +35,6 @@
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ryj-BH-DYo">
                         <rect key="frame" x="15" y="0.0" width="314" height="155"/>
-                        <color key="backgroundColor" red="1" green="0.89617955019999995" blue="0.026272134799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </imageView>
                 </subviews>
             </view>
