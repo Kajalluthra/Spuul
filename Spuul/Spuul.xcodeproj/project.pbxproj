@@ -18,6 +18,8 @@
 		9E9F1B2220BAEE9700927BA1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B2120BAEE9700927BA1 /* APIManager.swift */; };
 		9E9F1B2420BAF34600927BA1 /* MoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B2320BAF34600927BA1 /* MoviesManager.swift */; };
 		9E9F1B2620BAF39100927BA1 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B2520BAF39100927BA1 /* MovieList.swift */; };
+		9E9F1B2920BAFBD800927BA1 /* CategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B2720BAFBD800927BA1 /* CategoryCollectionCell.swift */; };
+		9E9F1B2A20BAFBD800927BA1 /* CategoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9F1B2820BAFBD800927BA1 /* CategoryCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		9E9F1B2120BAEE9700927BA1 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		9E9F1B2320BAF34600927BA1 /* MoviesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesManager.swift; sourceTree = "<group>"; };
 		9E9F1B2520BAF39100927BA1 /* MovieList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		9E9F1B2720BAFBD800927BA1 /* CategoryCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionCell.swift; sourceTree = "<group>"; };
+		9E9F1B2820BAFBD800927BA1 /* CategoryCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 		9E9F1AFC20BAED5500927BA1 /* Spuul */ = {
 			isa = PBXGroup;
 			children = (
+				9E9F1B2720BAFBD800927BA1 /* CategoryCollectionCell.swift */,
+				9E9F1B2820BAFBD800927BA1 /* CategoryCollectionCell.xib */,
 				9E9F1B2520BAF39100927BA1 /* MovieList.swift */,
 				9E9F1AFD20BAED5500927BA1 /* AppDelegate.swift */,
 				9E9F1AFF20BAED5500927BA1 /* HomeViewController.swift */,
@@ -197,6 +203,7 @@
 				9E9F1B0820BAED5500927BA1 /* LaunchScreen.storyboard in Resources */,
 				9E9F1B0520BAED5500927BA1 /* Assets.xcassets in Resources */,
 				9E9F1B2020BAEDFB00927BA1 /* HomeTableViewCell.xib in Resources */,
+				9E9F1B2A20BAFBD800927BA1 /* CategoryCollectionCell.xib in Resources */,
 				9E9F1B0320BAED5500927BA1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +224,7 @@
 			files = (
 				9E9F1B2620BAF39100927BA1 /* MovieList.swift in Sources */,
 				9E9F1B2420BAF34600927BA1 /* MoviesManager.swift in Sources */,
+				9E9F1B2920BAFBD800927BA1 /* CategoryCollectionCell.swift in Sources */,
 				9E9F1B2220BAEE9700927BA1 /* APIManager.swift in Sources */,
 				9E9F1B1F20BAEDFB00927BA1 /* HomeTableViewCell.swift in Sources */,
 				9E9F1B0020BAED5500927BA1 /* HomeViewController.swift in Sources */,

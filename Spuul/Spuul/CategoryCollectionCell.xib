@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell1" id="8BE-C6-dy6" customClass="CategoryCollectionCell" customModule="Spuul" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="185"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbd-8k-zyP">
+                        <rect key="frame" x="15" y="155" width="314" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="FSZ-md-4IB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ryj-BH-DYo">
+                        <rect key="frame" x="15" y="0.0" width="314" height="155"/>
+                        <color key="backgroundColor" red="1" green="0.89617955019999995" blue="0.026272134799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qbd-8k-zyP" firstAttribute="top" secondItem="ryj-BH-DYo" secondAttribute="bottom" id="8oa-CM-sUv"/>
+                <constraint firstItem="qbd-8k-zyP" firstAttribute="leading" secondItem="8BE-C6-dy6" secondAttribute="leading" constant="15" id="C9P-bz-Ucm"/>
+                <constraint firstItem="ryj-BH-DYo" firstAttribute="top" secondItem="8BE-C6-dy6" secondAttribute="top" id="EJV-XD-VQe"/>
+                <constraint firstAttribute="bottom" secondItem="qbd-8k-zyP" secondAttribute="bottom" id="Oro-hp-GLJ"/>
+                <constraint firstItem="ryj-BH-DYo" firstAttribute="leading" secondItem="8BE-C6-dy6" secondAttribute="leading" constant="15" id="avr-fv-4ze"/>
+                <constraint firstAttribute="trailing" secondItem="qbd-8k-zyP" secondAttribute="trailing" constant="15" id="bUM-tT-Lz7"/>
+                <constraint firstAttribute="trailing" secondItem="ryj-BH-DYo" secondAttribute="trailing" constant="15" id="hmf-ro-vbd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="4KJ-VO-pQL"/>
+            <size key="customSize" width="344" height="185"/>
+            <connections>
+                <outlet property="movieImageView" destination="ryj-BH-DYo" id="wce-dR-O3M"/>
+                <outlet property="movieNameLabel" destination="qbd-8k-zyP" id="3rc-rc-2fb"/>
+            </connections>
+            <point key="canvasLocation" x="1" y="4.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

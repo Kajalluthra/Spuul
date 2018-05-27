@@ -19,15 +19,34 @@ import UIKit
 class MoviesManager: NSObject {
     
     var movieListArray:[MovieList] = [MovieList]()
-
+    var moviesArray:[Movies] = [Movies]()
+    
     weak var delegate: MoviesManagerDelegate?
     let apiInstance = APIManager()
-
+    
     override init() {
         super.init()
     }
     
     func loadContentForMoviesList() {
+        
+        func loadContentMovies() {
+            self.apiInstance.homeVideosApi { (success, response, error) in
+                
+                if success {
+                    for news in response!{
+                        let dictnews = news as! NSDictionary
+                        let model = Movies(info: dictnews)
+                        self.moviesArray.append(model)
+                    }
+                    self.delegate?.didUpdateList()
+                    
+                } else {
+                    self.delegate?.didUpdateErrorWithAlert(error: error!)
+                }
+                
+            }
+        }
         
         self.apiInstance.homeTitleApi { (success, response, error) in
             if success {
@@ -38,13 +57,13 @@ class MoviesManager: NSObject {
                     self.movieListArray.append(model)
                 }
                 
-               self.delegate?.didUpdateList()
+                loadContentMovies()
                 
             } else {
                 self.delegate?.didUpdateErrorWithAlert(error: error!)
             }
         }
-
+        
     }
     
     

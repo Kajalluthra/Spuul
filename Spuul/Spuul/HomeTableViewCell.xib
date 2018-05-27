@@ -42,6 +42,10 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="z43-bi-pHB"/>
+                            <outlet property="delegate" destination="-1" id="YAU-6k-Rje"/>
+                        </connections>
                     </collectionView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,6 +61,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="movieTypeLabel" destination="3Yi-iJ-qPB" id="hGc-rS-Kn6"/>
+                <outlet property="myCollectionView" destination="Zql-5f-ftf" id="gc8-9x-Jbo"/>
             </connections>
             <point key="canvasLocation" x="40.5" y="224"/>
         </tableViewCell>

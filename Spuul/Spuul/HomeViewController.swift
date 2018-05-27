@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  Spuul
 //
 //  Created by Kajal on 27/5/2018.
@@ -50,7 +50,7 @@ extension HomeViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: HomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: "homeCell") as! HomeTableViewCell
-        cell.setupHomeCell(movieList: self.manager.movieListArray[indexPath.row])
+        cell.setupHomeCell(movieList: self.manager.movieListArray[indexPath.row], movies: self.manager.moviesArray)
         return cell
     }
 }
