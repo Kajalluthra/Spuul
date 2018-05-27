@@ -15,6 +15,7 @@
 		9E9F1B1320BAED5500927BA1 /* SpuulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B1220BAED5500927BA1 /* SpuulTests.swift */; };
 		9E9F1B1F20BAEDFB00927BA1 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B1D20BAEDFA00927BA1 /* HomeTableViewCell.swift */; };
 		9E9F1B2020BAEDFB00927BA1 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9F1B1E20BAEDFA00927BA1 /* HomeTableViewCell.xib */; };
+		9E9F1B2220BAEE9700927BA1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F1B2120BAEE9700927BA1 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		9E9F1B1420BAED5500927BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E9F1B1D20BAEDFA00927BA1 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		9E9F1B1E20BAEDFA00927BA1 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		9E9F1B2120BAEE9700927BA1 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				9E9F1AFF20BAED5500927BA1 /* HomeViewController.swift */,
 				9E9F1B1D20BAEDFA00927BA1 /* HomeTableViewCell.swift */,
 				9E9F1B1E20BAEDFA00927BA1 /* HomeTableViewCell.xib */,
+				9E9F1B2120BAEE9700927BA1 /* APIManager.swift */,
 				9E9F1B0120BAED5500927BA1 /* Main.storyboard */,
 				9E9F1B0420BAED5500927BA1 /* Assets.xcassets */,
 				9E9F1B0620BAED5500927BA1 /* LaunchScreen.storyboard */,
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E9F1B2220BAEE9700927BA1 /* APIManager.swift in Sources */,
 				9E9F1B1F20BAEDFB00927BA1 /* HomeTableViewCell.swift in Sources */,
 				9E9F1B0020BAED5500927BA1 /* HomeViewController.swift in Sources */,
 				9E9F1AFE20BAED5500927BA1 /* AppDelegate.swift in Sources */,

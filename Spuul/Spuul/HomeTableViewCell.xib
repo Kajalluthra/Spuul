@@ -16,7 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeCell" rowHeight="194" id="9L8-eE-Oeb" customClass="HomeTableViewCell" customModule="Spuul" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="194" id="9L8-eE-Oeb" customClass="HomeTableViewCell" customModule="Spuul" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9L8-eE-Oeb" id="p7B-mw-bdS">
@@ -42,10 +42,6 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <connections>
-                            <outlet property="dataSource" destination="-1" id="00X-DS-bnV"/>
-                            <outlet property="delegate" destination="-1" id="Fyd-Pe-kll"/>
-                        </connections>
                     </collectionView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,7 +57,6 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="movieTypeLabel" destination="3Yi-iJ-qPB" id="hGc-rS-Kn6"/>
-                <outlet property="myCollectionView" destination="Zql-5f-ftf" id="xrq-WL-Aqt"/>
             </connections>
             <point key="canvasLocation" x="40.5" y="224"/>
         </tableViewCell>

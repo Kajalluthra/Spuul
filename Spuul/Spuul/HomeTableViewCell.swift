@@ -19,6 +19,7 @@ class HomeTableViewCell: UITableViewCell {
         // Initialization code
 
     }
+    
 
 }
 

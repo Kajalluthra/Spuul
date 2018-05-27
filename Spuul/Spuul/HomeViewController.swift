@@ -11,18 +11,28 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var homeTableView: UITableView!
-
+    let apiInstance = APIManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
+        setupUI()
     }
 
     func setupUI() {
+       
         let movieListNib = UINib(nibName: "HomeTableViewCell", bundle: nil)
         homeTableView.register(movieListNib, forCellReuseIdentifier: "homeCell")
+        
+        self.apiInstance.homeTitleApi { (success, response, error) in
+            if success {
+                
+                
+            } else {
+           
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,6 +56,7 @@ extension HomeViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: HomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: "homeCell") as! HomeTableViewCell
+
         return cell
     }
 }
