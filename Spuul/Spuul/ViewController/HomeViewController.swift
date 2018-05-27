@@ -21,7 +21,13 @@ class HomeViewController : UIViewController {
     // MARK:- AppLifecyle methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+    
+    func setupUI() {
+        
         self.loadinScreen.show()
+        self.navigationItem.title = Constants.AppName
         
         let movieListNib = UINib(nibName: "HomeTableViewCell", bundle: nil)
         homeTableView.register(movieListNib, forCellReuseIdentifier: "homeCell")
@@ -34,6 +40,7 @@ class HomeViewController : UIViewController {
         self.manager.delegate = self
         self.manager.loadContentForMoviesList()
         startTimer()
+        
     }
     
     // MARK:- CarousellTimer
