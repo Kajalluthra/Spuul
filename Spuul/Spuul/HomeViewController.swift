@@ -12,7 +12,8 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var homeTableView: UITableView!
     let manager = MoviesManager()
-    
+    let loadinScreen = LoadingView.newInstance()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,6 +23,7 @@ class HomeViewController: UIViewController {
 
     func setupUI() {
        
+        self.loadinScreen.show()
         let movieListNib = UINib(nibName: "HomeTableViewCell", bundle: nil)
         homeTableView.register(movieListNib, forCellReuseIdentifier: "homeCell")
         
@@ -61,12 +63,14 @@ extension HomeViewController : MoviesManagerDelegate {
     @objc internal func didUpdateList() {
         DispatchQueue.main.async {
             self.homeTableView.reloadData()
+            self.loadinScreen.hide()
         }
     }
     
     @objc internal func didUpdateErrorWithAlert( error: String){
        
         //show alert
+         self.loadinScreen.hide()
     }
 }
 
