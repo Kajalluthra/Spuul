@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 class CategoryCollectionCell: UICollectionViewCell {
    
@@ -18,7 +19,8 @@ class CategoryCollectionCell: UICollectionViewCell {
     func setupMovieCell(selectedItem: Movies) {
         
         self.movieNameLabel.text = selectedItem.movieTitle
-        
+        self.movieImageView.sd_setImage(with: URL(string: selectedItem.movieUrl!), placeholderImage: UIImage(named: "placeholder"))
+
     }
 }
 

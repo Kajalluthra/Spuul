@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 class CarousellCollectionCell: UICollectionViewCell {
 
      @IBOutlet weak var carousellImageView: UIImageView!
@@ -18,6 +18,6 @@ class CarousellCollectionCell: UICollectionViewCell {
     }
     
     func setupCarousellCell(selectedItem: String) {
-        //setup SDWeb
+        carousellImageView.sd_setImage(with: URL(string: selectedItem), placeholderImage: UIImage(named: "placeholder"))
     }
 }
